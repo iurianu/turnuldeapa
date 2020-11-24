@@ -1,0 +1,110 @@
+.typage {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    //background-image: url(../images/thank-you-page.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    figure {
+        img {
+            max-width: 100%;
+        }
+    }
+    .logo {
+        width: 160px;
+        height: auto;
+        margin: 4rem auto;
+    }
+    .checkmark {
+        width: 100px;
+        height: auto;
+        margin: 2rem auto;
+    }
+    h1 {
+        font-size: 84px;
+    }
+    blockquote {
+        margin-top: 0;
+        font-size: 34px;
+    }
+}
+
+header {
+    margin-top: 2rem;
+}
+
+main {
+    p {
+        font-size: 20px;
+    }
+    li {
+        font-size: 20px;
+    }
+    h2 {
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+    .accordion {
+        .card {
+            background-color: transparent;
+            .card-header {
+                //background-color: #1a3636;
+            }
+        }
+        .btn-link {
+            &:hover, &:focus {
+                
+                text-decoration: none;
+            }
+        }
+        [data-toggle="collapse"] {
+            h2 {
+                color: #ae905a;
+            }
+            &:after {
+                position: absolute;
+                top: 2rem;
+                right: 1rem;
+                display: inline-block;
+                font: normal normal normal 14px/1 FontAwesome;
+                font-size: inherit;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                content: "\f054";
+                transform: rotate(-90deg);
+                transition: all linear 0.25s;
+                color: #ae905a;
+            }
+            &.collapsed {
+                h2 {
+                    color: #FFF;
+                }
+                &:after {                    
+                    transform: rotate(90deg);
+                    color: #FFF;
+                }
+            }
+        }
+    }
+    .btn-link {
+        width: 100%;
+        font-weight: 400;
+        color: #FFF;
+        text-decoration: none;
+        text-align: left;
+    }
+}
+
+footer {
+    .black-ribbon {            
+        background-color: #050909;
+        padding: 20px 15px;
+        margin: 35px 0 0;
+        ul {
+            list-style: none;
+        }
+    }
+}
